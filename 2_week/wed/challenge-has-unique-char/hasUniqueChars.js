@@ -11,6 +11,8 @@
 // hasUniqueChars("Bob")
 // returns true
 
+//////////////////SOLUTION 1////////////////////
+
 function hasUniqueChars(word) {
     let unique = [];
 
@@ -25,3 +27,10 @@ function hasUniqueChars(word) {
 }
 
 console.log(hasUniqueChars(`Monday`));
+
+//////////////////SOLUTION 2////////////////////
+
+// function hasUniqueChars(word) {
+//     return word.length === new Set(word).size ? true : false;
+// }
+// console.log(hasUniqueChars(`Moonday`));
