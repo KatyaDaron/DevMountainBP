@@ -23,15 +23,19 @@
 // hasMoreVowels('Aal')
 // true
 
-const hasMoreVowels = word => {
-    word = word.toLowerCase();
-    let vowel = ['a', 'e', 'i', 'o', 'u'];
-    let vowelCount = 0;
-    let constantCount = 0;
-    for (let i = 0; i < word.length; i++) {
-        vowel.includes(word.charAt(i)) ? vowelCount++ : constantCount++;
-    }
-    return vowelCount > constantCount;
-}
+/////////////////////SOLUTION 1/////////////////////
+// const hasMoreVowels = word => {
+//     word = word.toLowerCase();
+//     let vowel = ['a', 'e', 'i', 'o', 'u'];
+//     let vowelCount = 0;
+//     let constantCount = 0;
+//     for (let i = 0; i < word.length; i++) {
+//         vowel.includes(word.charAt(i)) ? vowelCount++ : constantCount++;
+//     }
+//     return vowelCount > constantCount;
+// }
+
+/////////////////////SOLUTION 2/////////////////////
+const hasMoreVowels = (word) => word.toLowerCase().split('').filter((x => ['a', 'e', 'i', 'o', 'u'].includes(x))).length > (word.length/2);
 
 console.log(hasMoreVowels(`Aal`));
