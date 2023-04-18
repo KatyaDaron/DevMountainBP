@@ -1,0 +1,57 @@
+#color-id {
+    color: brown;
+    display:inline;
+  }
+  .bold {
+    font-weight: 800;
+  }
+  
+  .color-primary {
+    color: green;
+  }
+  .color-secondary {
+    color: cyan;
+  }
+  
+  p {
+    color: rebeccapurple;
+    display:inline-block;
+  }
+  
+  .flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .border {
+    border: 1px solid red;
+  }
+  
+  .bg-color {
+    background-color: slateblue;
+  }
+  
+  .bg-color2 {
+    background-color:aquamarine
+  }
+  
+  .position-relative {
+    position:relative;
+    bottom:102px;
+    left:101px;
+  }
+  
+  .small-box {
+    position:absolute;
+    height:25px;
+    width:25px;
+    top:10px;
+    left:50px;
+  }
