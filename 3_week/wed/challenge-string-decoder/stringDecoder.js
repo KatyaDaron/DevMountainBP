@@ -21,16 +21,13 @@
 const decoder = code => {
     let result = [];
     for (let i = 0; i < code.length; i++) {
-        if (Number(code.charAt(i)) === 0) {
-            result.push(code.charAt(i + 1));
-            i++;
-        } else {
+        if (Number(code.charAt(i)) !== 0) {
             i += Number(code.charAt(i));
-            result.push(code.charAt(i + 1));
-            i++;
         }
+        result.push(code.charAt(i + 1));
+        i++;
     }
     return result.join('');
 }
 
-console.log(decoder('0h2xce5ngbrdy'));
+console.log(decoder('0y4akjfe0s'));
