@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Peter Piper</title>
+  </head>
+  <body>
+    <header>
+      <h1>Peter Piper Pizza</h1>
+    </header>
+    <main>
+      <section class="hero-section">
+        <img
+          src="https://images.unsplash.com/photo-1571757392712-7c1052de7ce5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+          id="hero-image"
+        />
+      </section>
+      <a href="#pizza-display">
+        <button class="buy-btn">Buy pizza</button>
+      </a>
+      <section id="pizza-display">
+        <section class="pizzaItem" value="Pepperoni pizza">
+          <img
+          src=https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVwcGVyb25pJTIwcGl6emF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          alt="pepperoni pizza" value="Pepperoni pizza">
+          <p value="Pepperoni pizza">Pepperoni Pizza</p>
+        </section>
+        <section class="pizzaItem" value="Hawaiian pizza" >
+          <img
+            src="https://i.ibb.co/2kkwhGK/chad-montano-Mq-T0asuo-Ic-U-unsplash.jpg"
+            alt="hawaiian pizza" value="Hawaiian pizza" 
+          />
+          <p value="Hawaiian pizza">Hawaiian Pizza</p>
+        </section>
+        <section class="pizzaItem" value="BBQ pizza">
+          <img
+            src="https://images.unsplash.com/photo-1655471264223-b07ce84d521c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJicSUyMHBpenphfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" value="BBQ pizza" 
+          />
+          <p value="BBQ pizza" >BBQ Pizza</p>
+        </section>
+      </section>
+      <form class="form-section">
+        <h2>Submit your recommendation</h2>
+        <label for="pizza-name"> Pizza name</label>
+        <input type="text" id="pizza-name" />
+        <label for="pizza-picture"> Pizza Picture </label>
+        <input type="text" id="pizza-picture" />
+        <button type="submit" class="submitBtn">submit</button>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
